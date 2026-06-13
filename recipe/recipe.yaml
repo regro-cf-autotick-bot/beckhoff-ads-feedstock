@@ -1,7 +1,7 @@
 context:
   name: beckhoff-ads
   tag: 113.0.32-1
-  version: ${{ tag | replace('-', '.') }}
+  version: "113.0.34-1"
 
 recipe:
   name: ${{ name }}
@@ -15,7 +15,7 @@ source:
     - meson-build.patch
 
 build:
-  number: 1
+  number: 0
   skip:
     - win
   script: |
